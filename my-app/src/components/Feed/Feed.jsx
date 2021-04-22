@@ -120,8 +120,8 @@ the sky will put you out!
                 <span>25</span>
               </div>
               <div className="comment_counts">
-                <span>4 Comments</span>
-                <span>13 Shares</span>
+                <span>4 Comments  </span>
+                <span> 13 Shares</span>
               </div>
             </div>
 
