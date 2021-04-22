@@ -1,0 +1,15 @@
+.app {
+  font-family: "San Fransisco";
+    background: #18191a;
+    overflow-x: hidden;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.story_page{
+  display:flex;
+}
