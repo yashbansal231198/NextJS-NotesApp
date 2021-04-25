@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Share.css";
 import profile from "../../assets/profile.png";
 import VideocamIcon from '@material-ui/icons/Videocam';
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';

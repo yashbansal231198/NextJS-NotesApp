@@ -8,6 +8,7 @@ import avatar4 from "../../assets/avatar4.png";
 import user from "../../assets/user.png";
 import plus from "../../assets/plus.png";
 import facebook from "../../assets/facebook.png";
+import StoryAvailable from '../StoryAvailable/StoryAvailable';
 function StoryPageLeft() {
     return (
     <div className="page_left">
@@ -34,42 +35,11 @@ function StoryPageLeft() {
     </div>
     <h3 className="allstories">All Stories</h3>
     <div className="otherstories">
-    <div id="feed0" className="storyfeed">
-              <img src={avatar3} />
-              <div>
-                <p>Anurag Sharma</p>
-                <span>18h</span>
-              </div>
-    </div>
-    
-    <div id="feed1" className="storyfeed">
-              <img src={avatar2}/>
-              <div>
-                <p>Rishabh Singh</p>
-                <span>12h</span>
-              </div>
-   </div>
-  <div  id="feed2" className="storyfeed">
-            <img src={user} />
-            <div>
-              <p>Pooja Jain</p>
-              <span>6h</span>
-            </div>
- </div>
-         <div id="feed3" className="storyfeed">
-  <img src={avatar1} />
-  <div>
-    <p>Jay Shah</p>
-    <span>7h</span>
-  </div>
-</div>
-<div id="feed4" className="storyfeed">
-<img src={avatar4} />
-<div>
-  <p>Nikita Garg</p>
-  <span>20h</span>
-</div>
-</div>
+    <StoryAvailable index="0" profileImage={avatar3} name="Anurag Sharma" time="18h"/>
+    <StoryAvailable index="1" profileImage={avatar2} name="Rishabh Singh" time="12h"/>
+    <StoryAvailable index="2" profileImage={user} name="Pooja Jain" time="6h"/>
+    <StoryAvailable index="3" profileImage={avatar1} name="Jay Shah" time="7h"/>
+    <StoryAvailable index="4" profileImage={avatar4} name="Nikita Garg" time="20h"/>
     </div>
     </div>
     );

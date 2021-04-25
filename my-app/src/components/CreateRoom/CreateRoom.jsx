@@ -1,4 +1,5 @@
 import React from 'react';
+import "./CreateRoom.css";
 import avatar1 from "../../assets/avatar1.png";
 import avatar2 from "../../assets/avatar2.png";
 import avatar3 from "../../assets/avatar3.png";

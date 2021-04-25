@@ -1,6 +1,7 @@
 import React from 'react';
 import Post from '../../components/Post/Post';
 import  Share from '../../components/Share/Share';
+import  StoryButton from '../../components/StoryButton/StoryButton';
 import CreateRoom from '../../components/CreateRoom/CreateRoom';
 import "./Feed.css";
 import avatar1 from "../../assets/avatar1.png";
@@ -16,35 +17,11 @@ function Feed() {
     return (
         <div className="feed">
             <div className="stories">
-              
-              
-              <Link to="/stories/story1" className="story1" >
-                <img src="https://picsum.photos/id/137/110/200" alt="" />
-                <img id="inside" src={avatar3} />
-                <span id="inside2">Rishabh</span>
-                </Link>
-                
-              <Link to="/stories/story2" className="story1">
-              <img src="https://picsum.photos/id/247/110/200" alt="" />
-              <img id="inside" src={avatar2} />
-              <span id="inside2"> Anurag </span>
-              </Link>
-              <Link to="/stories/story3" className="story1"> 
-                <img src="https://picsum.photos/id/522/110/200" alt="" />
-                <img id="inside" src={avatar5} />
-                <span id="inside2">Pooja</span>
-                </Link>
-                <Link to="/stories/story4" className="story1">
-                  <img src="https://picsum.photos/id/231/110/200" alt="" />
-                  <img id="inside" src={avatar4} />
-                  <span id="inside2">Nikita</span>
-                  </Link>
-                  <Link to="/stories/story5" className="story1">
-                    <img src="https://picsum.photos/id/537/110/200" alt="" />
-                    <img id="inside" src={avatar1}/>
-                    <span id="inside2">Rahul</span>
-                  </Link>
-             
+              <StoryButton index="1" curImage="https://picsum.photos/id/137/110/200" profilePhoto={avatar3} name="Rishabh"/>
+              <StoryButton index="2" curImage="https://picsum.photos/id/247/110/200" profilePhoto={avatar2} name="Anurag"/>
+              <StoryButton index="3" curImage="https://picsum.photos/id/522/110/200" profilePhoto={avatar5} name="Pooja"/>
+              <StoryButton index="4" curImage="https://picsum.photos/id/231/110/200" profilePhoto={avatar4} name="Nikita"/>
+              <StoryButton index="5" curImage="https://picsum.photos/id/537/110/200" profilePhoto={avatar1} name="Rahul"/>
               
             </div>
             <div className="media_container">
